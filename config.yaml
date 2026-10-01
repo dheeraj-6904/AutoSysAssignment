@@ -1,0 +1,7 @@
+grid_width: 20
+grid_height: 20
+static_obstacle_density: 0.1
+dynamic_obstacle_density: 0.05
+num_agents: 6
+seed: 42
+max_steps: 300

@@ -1,0 +1,1 @@
+"""Autonomous warehouse MAPF package."""

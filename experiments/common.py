@@ -13,11 +13,15 @@ CSV_DIR.mkdir(parents=True, exist_ok=True)
 PLOT_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def default_events(seed: int):
+def default_events(seed: int, num_agents: int):
+    if num_agents <= 0:
+        raise ValueError("num_agents must be positive")
+    b1 = seed % num_agents
+    b2 = (seed + 1) % num_agents
     return [
         cell_blockage_event(20, (3 + seed % 5, 3 + seed % 4)),
-        breakdown_event(50, seed % 3),
-        emergency_task_event(80, (seed + 1) % 4, (1, 1), (12, 12), priority=10),
+        breakdown_event(50, b1),
+        emergency_task_event(80, b2, (1, 1), (12, 12), priority=10),
     ]
 
 
@@ -25,7 +29,7 @@ def run_batch(configs: Iterable[Dict], repair_strategy: str = "local") -> pd.Dat
     rows: List[Dict] = []
     for cfg in configs:
         sim = WarehouseSimulator(SimulationConfig(**cfg))
-        m = sim.run(disruptions=default_events(cfg["seed"]), repair_strategy=repair_strategy)
+        m = sim.run(disruptions=default_events(cfg["seed"], cfg["num_agents"]), repair_strategy=repair_strategy)
         rows.append({
             "seed": cfg["seed"],
             "num_agents": cfg["num_agents"],

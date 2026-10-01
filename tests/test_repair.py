@@ -14,3 +14,29 @@ def test_changed_agent_counter():
     original = {0: [(0, 0), (1, 0)], 1: [(1, 1)]}
     repaired = {0: [(0, 0), (0, 1)], 1: [(1, 1)]}
     assert count_changed_agents(original, repaired) == 1
+
+
+def test_deterministic_only_b_changes():
+    original = {
+        0: [(0, 0), (1, 0), (2, 0)],
+        1: [(0, 1), (1, 1), (2, 1)],
+        2: [(0, 2), (1, 2), (2, 2)],
+    }
+    repaired = {
+        0: original[0],
+        1: [(0, 1), (0, 1), (1, 1), (2, 1)],
+        2: original[2],
+    }
+    assert count_changed_agents(original, repaired) == 1
+
+
+def test_deterministic_a_b_change_due_conflict():
+    original = {
+        0: [(0, 0), (1, 0), (2, 0)],
+        1: [(2, 0), (1, 0), (0, 0)],
+    }
+    repaired = {
+        0: [(0, 0), (0, 0), (1, 0), (2, 0)],
+        1: [(2, 0), (2, 0), (1, 0), (0, 0)],
+    }
+    assert count_changed_agents(original, repaired) == 2

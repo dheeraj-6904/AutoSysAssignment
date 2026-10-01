@@ -1,0 +1,13 @@
+seed,num_agents,dynamic_obstacle_density,repair_strategy,success,total_time,additional_time,changed_agents,changed_steps,repair_time,failure_reason
+0,8,0.0,local,1,133,42,2,112,0.0029846329999827503,
+1,8,0.0,local,1,72,0,1,0,0.00016708900000139693,
+2,8,0.0,local,0,80,0,0,0,0.2764653269999826,No feasible local repair found
+0,8,0.05,local,1,133,42,2,112,0.002900657000054707,
+1,8,0.05,local,1,72,0,1,0,0.00016008900001907023,
+2,8,0.05,local,0,80,0,0,0,0.311595198999953,No feasible local repair found
+0,8,0.1,local,1,133,42,2,112,0.0029000459999224404,
+1,8,0.1,local,1,72,0,1,0,0.00017085499996483122,
+2,8,0.1,local,0,80,0,0,0,0.31717613600005734,No feasible local repair found
+0,8,0.15,local,1,133,42,2,112,0.0029370119999612143,
+1,8,0.15,local,1,72,0,1,0,0.00015931699999782722,
+2,8,0.15,local,0,80,0,0,0,0.3200801479999882,No feasible local repair found

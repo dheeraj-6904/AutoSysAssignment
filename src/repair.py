@@ -33,7 +33,7 @@ class LocalRepairPlanner:
 
     def _build_component(self, agents: List[RobotAgent], affected: Set[int], current_time: int) -> Set[int]:
         suffixes = {a.robot_id: (a.current_path[current_time:] or [a.current_position]) for a in agents if a.active}
-        component = set(affected)
+        component = {aid for aid in affected if aid in suffixes}
         changed = True
         while changed:
             changed = False
@@ -72,6 +72,8 @@ class LocalRepairPlanner:
     def local_plan_repair(self, agents: List[RobotAgent], grid: GridMap, affected_agents: Set[int], current_time: int):
         start_t = perf_counter()
         component = self._build_component(agents, affected_agents, current_time)
+        if not component:
+            return True, {a.robot_id: a.current_path for a in agents}, perf_counter() - start_t, ""
         neighbors = list(component - affected_agents)
 
         for k in range(min(self.max_subset_neighbors, len(neighbors)) + 1):

@@ -117,7 +117,9 @@ class WarehouseSimulator:
             ag.active = False
             ag.status = "FAILED"
             self.grid.dynamic_obstacles.add(ag.current_position)
-            affected.add(rid)
+            for a in self.agents:
+                if a.active and ag.current_position in a.current_path[t:]:
+                    affected.add(a.robot_id)
         elif ev.event_type == "CELL_BLOCKAGE":
             cell = tuple(ev.payload["cell"])
             self.grid.force_block_cell(cell)

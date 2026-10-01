@@ -1,2 +1,6 @@
 temp
 *pycache*
+.venv
+.pytest_cache/
+results/
+demo/demo.gif

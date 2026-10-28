@@ -28,12 +28,16 @@ def default_events(seed: int, num_agents: int):
 def run_batch(configs: Iterable[Dict], repair_strategy: str = "local") -> pd.DataFrame:
     rows: List[Dict] = []
     for cfg in configs:
-        sim = WarehouseSimulator(SimulationConfig(**cfg))
-        m = sim.run(disruptions=default_events(cfg["seed"], cfg["num_agents"]), repair_strategy=repair_strategy)
+        c = dict(cfg)
+        enable_dyn = c.get("dynamic_obstacle_density", 0.0) > 0
+        if enable_dyn and c.get("dynamic_refresh_period", 0) == 0:
+            c["dynamic_refresh_period"] = 15
+        sim = WarehouseSimulator(SimulationConfig(**c))
+        m = sim.run(disruptions=default_events(c["seed"], c["num_agents"]), repair_strategy=repair_strategy, enable_dynamic_updates=enable_dyn)
         rows.append({
-            "seed": cfg["seed"],
-            "num_agents": cfg["num_agents"],
-            "dynamic_obstacle_density": cfg["dynamic_obstacle_density"],
+            "seed": c["seed"],
+            "num_agents": c["num_agents"],
+            "dynamic_obstacle_density": c["dynamic_obstacle_density"],
             "repair_strategy": repair_strategy,
             "success": int(m.success),
             "total_time": m.total_time,

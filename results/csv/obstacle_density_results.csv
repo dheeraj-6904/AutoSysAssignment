@@ -1,71 +1,71 @@
 seed,num_agents,dynamic_obstacle_density,repair_strategy,success,total_time,additional_time,changed_agents,changed_steps,repair_time,failure_reason
-0,8,0.0,local,1,133,42,2,112,0.004668599991418887,
-1,8,0.0,local,1,72,0,1,0,0.000269199998001568,
-2,8,0.0,local,0,80,0,0,0,0.5041503999964334,No feasible local repair found
+0,8,0.0,local,1,133,42,2,112,0.007295000017620623,
+1,8,0.0,local,1,72,0,1,0,0.00034309999318793416,
+2,8,0.0,local,0,80,0,0,0,0.7215572999848519,No feasible local repair found
 3,8,0.0,local,1,73,0,0,0,0.0,
-4,8,0.0,local,1,77,1,4,167,0.006027299998095259,
-5,8,0.0,local,1,76,0,3,106,0.00518039999587927,
-6,8,0.0,local,0,20,0,0,0,0.5801523000045563,No feasible local repair found
-7,8,0.0,local,0,80,0,0,0,0.6160587000049418,No feasible local repair found
-8,8,0.0,local,1,66,0,1,20,0.003525700005411636,
-9,8,0.0,local,0,20,0,0,0,0.5634576000011293,No feasible local repair found
-0,8,0.02,local,1,133,42,2,112,0.005078400005004369,
-1,8,0.02,local,1,72,0,1,0,0.0002606999987619929,
-2,8,0.02,local,0,80,0,0,0,0.4804084999996121,No feasible local repair found
-3,8,0.02,local,1,73,0,0,0,0.0,
-4,8,0.02,local,1,77,1,4,167,0.006627000002481509,
-5,8,0.02,local,1,76,0,3,106,0.004833399994822685,
-6,8,0.02,local,0,20,0,0,0,0.5919427999979234,No feasible local repair found
-7,8,0.02,local,0,80,0,0,0,0.5017301999978372,No feasible local repair found
-8,8,0.02,local,1,66,0,1,20,0.0019934000010835007,
-9,8,0.02,local,0,20,0,0,0,0.5459343000038643,No feasible local repair found
-0,8,0.05,local,1,133,42,2,112,0.006483899996965192,
-1,8,0.05,local,1,72,0,1,0,0.000684200000250712,
-2,8,0.05,local,0,80,0,0,0,0.5563965999972424,No feasible local repair found
-3,8,0.05,local,1,73,0,0,0,0.0,
-4,8,0.05,local,1,77,1,4,167,0.00864450000517536,
-5,8,0.05,local,1,76,0,3,106,0.004648699999961536,
-6,8,0.05,local,0,20,0,0,0,0.5554601000039838,No feasible local repair found
-7,8,0.05,local,0,80,0,0,0,0.6205644000001485,No feasible local repair found
-8,8,0.05,local,1,66,0,1,20,0.002366799999435898,
-9,8,0.05,local,0,20,0,0,0,0.5263151999970432,No feasible local repair found
-0,8,0.1,local,1,133,42,2,112,0.004793900006916374,
-1,8,0.1,local,1,72,0,1,0,0.00037510000402107835,
-2,8,0.1,local,0,80,0,0,0,0.5035280000010971,No feasible local repair found
-3,8,0.1,local,1,73,0,0,0,0.0,
-4,8,0.1,local,1,77,1,4,167,0.006064699999114964,
-5,8,0.1,local,1,76,0,3,106,0.004515100001299288,
-6,8,0.1,local,0,20,0,0,0,0.5296018000008189,No feasible local repair found
-7,8,0.1,local,0,80,0,0,0,0.534129200001189,No feasible local repair found
-8,8,0.1,local,1,66,0,1,20,0.0035781999977189116,
-9,8,0.1,local,0,20,0,0,0,0.5253510999973514,No feasible local repair found
-0,8,0.15,local,1,133,42,2,112,0.004672499999287538,
-1,8,0.15,local,1,72,0,1,0,0.0002629000009619631,
-2,8,0.15,local,0,80,0,0,0,0.5648303999987547,No feasible local repair found
-3,8,0.15,local,1,73,0,0,0,0.0,
-4,8,0.15,local,1,77,1,4,167,0.00734280000324361,
-5,8,0.15,local,1,76,0,3,106,0.004569299999275245,
-6,8,0.15,local,0,20,0,0,0,0.5720246999990195,No feasible local repair found
-7,8,0.15,local,0,80,0,0,0,0.632529099995736,No feasible local repair found
-8,8,0.15,local,1,66,0,1,20,0.0020614000022760592,
-9,8,0.15,local,0,20,0,0,0,0.5000978000025498,No feasible local repair found
-0,8,0.2,local,1,133,42,2,112,0.004695299998275004,
-1,8,0.2,local,1,72,0,1,0,0.00026149999757763,
-2,8,0.2,local,0,80,0,0,0,0.5441996000008658,No feasible local repair found
-3,8,0.2,local,1,73,0,0,0,0.0,
-4,8,0.2,local,1,77,1,4,167,0.007618299998284783,
-5,8,0.2,local,1,76,0,3,106,0.004579200001899153,
-6,8,0.2,local,0,20,0,0,0,0.5682981999998447,No feasible local repair found
-7,8,0.2,local,0,80,0,0,0,0.5558015999995405,No feasible local repair found
-8,8,0.2,local,1,66,0,1,20,0.0020271000030334108,
-9,8,0.2,local,0,20,0,0,0,0.4580470000000787,No feasible local repair found
-0,8,0.25,local,1,133,42,2,112,0.004731900000479072,
-1,8,0.25,local,1,72,0,1,0,0.0002598999999463558,
-2,8,0.25,local,0,80,0,0,0,0.49211889999423875,No feasible local repair found
-3,8,0.25,local,1,73,0,0,0,0.0,
-4,8,0.25,local,1,77,1,4,167,0.006081999999878462,
-5,8,0.25,local,1,76,0,3,106,0.004528400000708643,
-6,8,0.25,local,0,20,0,0,0,0.5469357999972999,No feasible local repair found
-7,8,0.25,local,0,80,0,0,0,0.4991689000016777,No feasible local repair found
-8,8,0.25,local,1,66,0,1,20,0.00199570000404492,
-9,8,0.25,local,0,20,0,0,0,0.5291720999957761,No feasible local repair found
+4,8,0.0,local,1,77,1,4,167,0.008975000004284084,
+5,8,0.0,local,1,76,0,3,106,0.006571599980816245,
+6,8,0.0,local,0,20,0,0,0,0.7587086000130512,No feasible local repair found
+7,8,0.0,local,0,80,0,0,0,0.7291469000047073,No feasible local repair found
+8,8,0.0,local,1,66,0,1,20,0.002691699977731332,
+9,8,0.0,local,0,20,0,0,0,0.6939310999878217,No feasible local repair found
+0,8,0.02,local,0,32,0,5,148,0.790163899975596,No feasible local repair found
+1,8,0.02,local,0,40,0,2,40,0.7059994000010192,No feasible local repair found
+2,8,0.02,local,0,12,0,0,0,0.7295569000125397,No feasible local repair found
+3,8,0.02,local,0,31,0,4,127,0.7125268000236247,No feasible local repair found
+4,8,0.02,local,1,73,0,6,233,0.011504499998409301,
+5,8,0.02,local,0,350,273,7,222,0.019621999963419512,Max steps exceeded
+6,8,0.02,local,0,20,0,3,75,0.7313243999378756,No feasible local repair found
+7,8,0.02,local,0,18,0,2,63,1.5410824000136927,No feasible local repair found
+8,8,0.02,local,0,8,0,0,0,0.7518695000035223,No feasible local repair found
+9,8,0.02,local,0,20,0,1,25,0.6895895999914501,No feasible local repair found
+0,8,0.05,local,0,5,0,0,0,0.749460299994098,No feasible local repair found
+1,8,0.05,local,0,0,0,0,0,0.0007157000072766095,No feasible local repair found
+2,8,0.05,local,0,12,0,2,94,0.7748608999827411,No feasible local repair found
+3,8,0.05,local,0,13,0,2,82,0.7043099999718834,No feasible local repair found
+4,8,0.05,local,0,7,0,1,54,2.8690516999922693,No feasible local repair found
+5,8,0.05,local,0,6,0,2,58,0.735866500006523,No feasible local repair found
+6,8,0.05,local,0,15,0,4,84,0.8160564999852795,No feasible local repair found
+7,8,0.05,local,0,18,0,5,220,1.542477799957851,No feasible local repair found
+8,8,0.05,local,0,8,0,0,0,0.7255811999784783,No feasible local repair found
+9,8,0.05,local,0,1,0,0,0,1.2615324000071269,No feasible local repair found
+0,8,0.1,local,0,5,0,1,47,0.689181900001131,No feasible local repair found
+1,8,0.1,local,0,0,0,0,0,0.0007247999892570078,No feasible local repair found
+2,8,0.1,local,0,1,0,0,0,2.5371476000000257,No feasible local repair found
+3,8,0.1,local,0,4,0,0,0,0.6332215000002179,No feasible local repair found
+4,8,0.1,local,0,1,0,0,0,0.5677527000079863,No feasible local repair found
+5,8,0.1,local,0,0,0,0,0,1.27485339998384,No feasible local repair found
+6,8,0.1,local,0,3,0,1,62,0.6825707999814767,No feasible local repair found
+7,8,0.1,local,0,3,0,1,39,0.7424585999979172,No feasible local repair found
+8,8,0.1,local,0,8,0,3,71,0.631570500030648,No feasible local repair found
+9,8,0.1,local,0,1,0,0,0,1.2789374999993015,No feasible local repair found
+0,8,0.15,local,0,0,0,0,0,0.5092090999823995,No feasible local repair found
+1,8,0.15,local,0,0,0,0,0,0.0027562000032048672,No feasible local repair found
+2,8,0.15,local,0,1,0,1,49,2.3547916999959853,No feasible local repair found
+3,8,0.15,local,0,2,0,0,0,0.648760999989463,No feasible local repair found
+4,8,0.15,local,0,1,0,0,0,0.6502834999992047,No feasible local repair found
+5,8,0.15,local,0,0,0,0,0,1.3106490999925882,No feasible local repair found
+6,8,0.15,local,0,3,0,2,121,0.5549595000047702,No feasible local repair found
+7,8,0.15,local,0,1,0,0,0,0.4482752999756485,No feasible local repair found
+8,8,0.15,local,0,1,0,1,24,0.624793499999214,No feasible local repair found
+9,8,0.15,local,0,1,0,1,47,1.1829791000345722,No feasible local repair found
+0,8,0.2,local,0,0,0,0,0,0.570836099999724,No feasible local repair found
+1,8,0.2,local,0,0,0,0,0,0.03605150000657886,No feasible local repair found
+2,8,0.2,local,0,0,0,0,0,0.6833155000058468,No feasible local repair found
+3,8,0.2,local,0,2,0,0,0,0.6854726000165101,No feasible local repair found
+4,8,0.2,local,0,1,0,1,104,8.260950999974739,No feasible local repair found
+5,8,0.2,local,0,0,0,0,0,2.345424600003753,No feasible local repair found
+6,8,0.2,local,0,3,0,2,143,1.3930783999967389,No feasible local repair found
+7,8,0.2,local,0,0,0,0,0,2.577063399978215,No feasible local repair found
+8,8,0.2,local,0,0,0,0,0,0.5113360999966972,No feasible local repair found
+9,8,0.2,local,0,0,0,0,0,1.0674454000254627,No feasible local repair found
+0,8,0.25,local,0,0,0,0,0,0.9903491000004578,No feasible local repair found
+1,8,0.25,local,0,0,0,0,0,0.7218507999787107,No feasible local repair found
+2,8,0.25,local,0,0,0,0,0,0.8645642999908887,No feasible local repair found
+3,8,0.25,local,0,0,0,0,0,1.1256840999994893,No feasible local repair found
+4,8,0.25,local,0,0,0,0,0,2.7639816000009887,No feasible local repair found
+5,8,0.25,local,0,0,0,0,0,0.06095660000573844,No feasible local repair found
+6,8,0.25,local,0,0,0,0,0,1.0449579999840353,No feasible local repair found
+7,8,0.25,local,0,0,0,0,0,1.999003500008257,No feasible local repair found
+8,8,0.25,local,0,0,0,0,0,1.0853029999998398,No feasible local repair found
+9,8,0.25,local,0,0,0,0,0,1.8128171999996994,No feasible local repair found
